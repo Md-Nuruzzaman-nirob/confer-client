@@ -1,172 +1,122 @@
 [
-    {
-        "ServiceName": "Event Planning and Management",
-        "Description": "Comprehensive event planning and management services that handle all aspects of organizing a corporate event, from concept to execution.",
-        "Image": "image_url_1.jpg",
-        "Price": "$5,000 - $20,000",
-        "Availability": "Year-round",
-        "Duration": "Customizable",
-        "Features": ["Budget Management", "Vendor Coordination", "Timeline Planning"],
-        "ContactInfo": {
-          "Name": "John Smith",
-          "Email": "john@example.com",
-          "Phone": "+1 (555) 123-4567"
-        }
-    },
-    {
-        "ServiceName": "Audio-Visual Production",
-        "Description": "Providing state-of-the-art audio and visual equipment, technical support, and production services for presentations, seminars, and conferences.",
-        "Image": "image_url_2.jpg",
-        "Price": "$2,000 - $10,000",
-        "Availability": "Year-round",
-        "Duration": "Event-based",
-        "Features": ["High-Quality Sound Systems", "Projection Equipment", "Live Streaming"],
-        "ContactInfo": {
-          "Name": "Emily Johnson",
-          "Email": "emily@example.com",
-          "Phone": "+1 (555) 987-6543"
-        }
-    },
-    {
-        "ServiceName": "Catering and Food Services",
-        "Description": "Offering a wide range of catering options, including buffet setups, gourmet dining, and dietary accommodations for corporate gatherings.",
-        "Image": "image_url_3.jpg",
-        "Price": "$30 - $100 per person",
-        "Availability": "Year-round",
-        "Duration": "Event-based",
-        "Features": ["Custom Menu Options", "Professional Chefs", "Dietary Restrictions Catered"],
-        "ContactInfo": {
-          "Name": "Sarah Davis",
-          "Email": "sarah@example.com",
-          "Phone": "+1 (555) 789-1234"
-        }
-    },
-    {
-        "ServiceName": "Venue Selection and Booking",
-        "Description": "Assisting in finding and securing suitable event venues that meet the specific needs and size requirements of corporate events.",
-        "Image": "image_url_4.jpg",
-        "Price": "Varies by venue",
-        "Availability": "Year-round",
-        "Duration": "Event-based",
-        "Features": ["Venue Options Research", "Negotiation with Venues", "Site Inspections"],
-        "ContactInfo": {
-          "Name": "Michael Wilson",
-          "Email": "michael@example.com",
-          "Phone": "+1 (555) 234-5678"
-        }
-    },
-    {
-        "ServiceName": "Event Decor and Design",
-        "Description": "Creating visually appealing event environments, including decor, lighting, and thematic design to enhance the ambiance.",
-        "Image": "image_url_5.jpg",
-        "Price": "$2,000 - $15,000",
-        "Availability": "Year-round",
-        "Duration": "Event-based",
-        "Features": ["Theme Development", "Floral Arrangements", "Lighting Effects"],
-        "ContactInfo": {
-          "Name": "Olivia Anderson",
-          "Email": "olivia@example.com",
-          "Phone": "+1 (555) 345-6789"
-        }
-    },
-    {
-        "ServiceName": "Entertainment Booking",
-        "Description": "Booking live bands, DJs, comedians, motivational speakers, or other entertainment acts to engage and entertain event attendees.",
-        "Image": "image_url_6.jpg",
-        "Price": "$3,000 - $25,000",
-        "Availability": "Year-round",
-        "Duration": "Event-based",
-        "Features": ["Talent Sourcing", "Entertainment Contracts", "Performance Coordination"],
-        "ContactInfo": {
-          "Name": "Daniel Miller",
-          "Email": "daniel@example.com",
-          "Phone": "+1 (555) 456-7890"
-        }
-    },
-    {
-        "ServiceName": "Event Registration and Ticketing",
-        "Description": "Developing online registration systems, ticketing platforms, and check-in solutions to streamline the registration process.",
-        "Image": "image_url_7.jpg",
-        "Price": "$1,000 - $5,000",
-        "Availability": "Year-round",
-        "Duration": "Customizable",
-        "Features": ["Online Registration", "Check-in Solutions", "Ticket Sales Analytics"],
-        "ContactInfo": {
-          "Name": "Michelle Lee",
-          "Email": "michelle@example.com",
-          "Phone": "+1 (555) 678-9012"
-        }
-    },
-    {
-        "ServiceName": "Event Technology Services",
-        "Description": "Offering event technology solutions such as event apps, virtual event platforms, and audience engagement tools to enhance the event experience.",
-        "Image": "image_url_8.jpg",
-        "Price": "$2,000 - $15,000",
-        "Availability": "Year-round",
-        "Duration": "Event-based",
-        "Features": ["Virtual Event Platforms", "Audience Engagement Tools", "Technical Support"],
-        "ContactInfo": {
-          "Name": "Sophia Clark",
-          "Email": "sophia@example.com",
-          "Phone": "+1 (555) 789-0123"
-        }
-    },
-    {
-        "ServiceName": "Event Photography and Videography",
-        "Description": "Professional photographers and videographers to capture moments and create promotional materials and documentation.",
-        "Image": "image_url_9.jpg",
-        "Price": "$1,500 - $10,000",
-        "Availability": "Year-round",
-        "Duration": "Event-based",
-        "Features": ["High-Quality Photography", "Video Production", "Editing Services"],
-        "ContactInfo": {
-          "Name": "David Wilson",
-          "Email": "david@example.com",
-          "Phone": "+1 (555) 901-2345"
-        }
-    },
-    {
-        "ServiceName": "Transportation and Logistics",
-        "Description": "Handling transportation arrangements for attendees, managing event logistics, and coordinating travel and accommodation.",
-        "Image": "image_url_10.jpg",
-        "Price": "$2,000 - $8,000",
-        "Availability": "Year-round",
-        "Duration": "Event-based",
-        "Features": ["Transportation Coordination", "Logistics Management", "Accommodation Booking"],
-        "ContactInfo": {
-          "Name": "Lucas Anderson",
-          "Email": "lucas@example.com",
-          "Phone": "+1 (555) 123-8901"
-        }
-    },
-    {
-        "ServiceName": "Team Building and Training Workshops",
-        "Description": "Organizing team-building activities, workshops, and training sessions to promote collaboration and skill development among employees.",
-        "Image": "image_url_11.jpg",
-        "Price": "$1,500 - $7,000",
-        "Availability": "Year-round",
-        "Duration": "Customizable",
-        "Features": ["Team-Building Activities", "Professional Facilitators", "Skill Development Workshops"],
-        "ContactInfo": {
-          "Name": "Emma Taylor",
-          "Email": "emma@example.com",
-          "Phone": "+1 (555) 567-8901"
-        }
-    },
-    {
-        "ServiceName": "Brand Promotion and Marketing",
-        "Description": "Developing marketing strategies and promotional campaigns to raise awareness and generate buzz for corporate events.",
-        "Image": "image_url_12.jpg",
-        "Price": "$2,500 - $12,000",
-        "Availability": "Year-round",
-        "Duration": "Customizable",
-        "Features": ["Marketing Campaigns", "Social Media Promotion", "Event Branding"],
-        "ContactInfo": {
-          "Name": "Aiden Johnson",
-          "Email": "aiden@example.com",
-          "Phone": "+1 (555) 678-1234"
-        }
-    }
+  {
+      "ID": 1,
+      "ServiceName": "Event Planning and Management",
+      "Description": "Comprehensive event planning and management services that handle all aspects of organizing a corporate event, from concept to execution.",
+      "Image": "https://i.ibb.co/zNVWwnt/event-planing.jpg",
+      "Price": "$5,000 - $20,000",
+      "Availability": "Year-round",
+      "Duration": "Customizable",
+      "Features": ["Budget Management", "Vendor Coordination", "Timeline Planning"]
+  },
+  {
+      "ID": 2,
+      "ServiceName": "Audio-Visual Production",
+      "Description": "Providing state-of-the-art audio and visual equipment, technical support, and production services for presentations, seminars, and conferences.",
+      "Image": "https://i.ibb.co/31MsGvm/audio-video.jpg",
+      "Price": "$2,000 - $10,000",
+      "Availability": "Year-round",
+      "Duration": "Event-based",
+      "Features": ["High-Quality Sound Systems", "Projection Equipment", "Live Streaming"]
+  },
+  {
+      "ID": 3,
+      "ServiceName": "Catering and Food Services",
+      "Description": "Offering a wide range of catering options, including buffet setups, gourmet dining, and dietary accommodations for corporate gatherings.",
+      "Image": "https://i.ibb.co/B3kh1MX/food.jpg",
+      "Price": "$30 - $100",
+      "Availability": "Year-round",
+      "Duration": "Event-based",
+      "Features": ["Custom Menu Options", "Professional Chefs", "Dietary Restrictions Catered"]
+  },
+  {
+      "ID": 4,
+      "ServiceName": "Venue Selection and Booking",
+      "Description": "Assisting in finding and securing suitable event venues that meet the specific needs and size requirements of corporate events.",
+      "Image": "https://i.ibb.co/Zg7GQ1b/vanue.jpg",
+      "Price": "Varies by venue",
+      "Availability": "Year-round",
+      "Duration": "Event-based",
+      "Features": ["Venue Options Research", "Negotiation with Venues", "Site Inspections"]
+  },
+  {
+      "ID": 5,
+      "ServiceName": "Event Decor and Design",
+      "Description": "Creating visually appealing event environments, including decor, lighting, and thematic design to enhance the ambiance.",
+      "Image": "https://i.ibb.co/58RwD0C/decoration.jpg",
+      "Price": "$2,000 - $15,000",
+      "Availability": "Year-round",
+      "Duration": "Event-based",
+      "Features": ["Theme Development", "Floral Arrangements", "Lighting Effects"]
+  },
+  {
+      "ID": 6,
+      "ServiceName": "Entertainment Booking",
+      "Description": "Booking live bands, DJs, comedians, motivational speakers, or other entertainment acts to engage and entertain event attendees.",
+      "Image": "https://i.ibb.co/nMzRWJW/entertaining.jpg",
+      "Price": "$3,000 - $25,000",
+      "Availability": "Year-round",
+      "Duration": "Event-based",
+      "Features": ["Talent Sourcing", "Entertainment Contracts", "Performance Coordination"]
+  },
+  {
+      "ID": 7,
+      "ServiceName": "Event Registration and Ticketing",
+      "Description": "Developing online registration systems, ticketing platforms, and check-in solutions to streamline the registration process.",
+      "Image": "https://i.ibb.co/LzNzd6T/ticketing.jpg",
+      "Price": "$1,000 - $5,000",
+      "Availability": "Year-round",
+      "Duration": "Customizable",
+      "Features": ["Online Registration", "Check-in Solutions", "Ticket Sales Analytics"]
+  },
+  {
+      "ID": 8,
+      "ServiceName": "Event Technology Services",
+      "Description": "Offering event technology solutions such as event apps, virtual event platforms, and audience engagement tools to enhance the event experience.",
+      "Image": "https://i.ibb.co/QrkTjvM/technology.jpg",
+      "Price": "$2,000 - $15,000",
+      "Availability": "Year-round",
+      "Duration": "Event-based",
+      "Features": ["Virtual Event Platforms", "Audience Engagement Tools", "Technical Support"]
+  },
+  {
+      "ID": 9,
+      "ServiceName": "Event Photography and Videography",
+      "Description": "Professional photographers and videographers to capture moments and create promotional materials and documentation.",
+      "Image": "https://i.ibb.co/rv4DGzY/videography.jpg",
+      "Price": "$1,500 - $10,000",
+      "Availability": "Year-round",
+      "Duration": "Event-based",
+      "Features": ["High-Quality Photography", "Video Production", "Editing Services"]
+  },
+  {
+      "ID": 10,
+      "ServiceName": "Transportation and Logistics",
+      "Description": "Handling transportation arrangements for attendees, managing event logistics, and coordinating travel and accommodation.",
+      "Image": "https://i.ibb.co/dKwJmMK/transport.jpg",
+      "Price": "$2,000 - $8,000",
+      "Availability": "Year-round",
+      "Duration": "Event-based",
+      "Features": ["Transportation Coordination", "Logistics Management", "Accommodation Booking"]
+  },
+  {
+      "ID": 11,
+      "ServiceName": "Team Building and Training Workshops",
+      "Description": "Organizing team-building activities, workshops, and training sessions to promote collaboration and skill development among employees.",
+      "Image": "https://i.ibb.co/C2xg3hk/team.jpg",
+      "Price": "$1,500 - $7,000",
+      "Availability": "Year-round",
+      "Duration": "Customizable",
+      "Features": ["Team-Building Activities", "Professional Facilitators", "Skill Development Workshops"]
+  },
+  {
+      "ID": 12,
+      "ServiceName": "Brand Promotion and Marketing",
+      "Description": "Developing marketing strategies and promotional campaigns to raise awareness and generate buzz for corporate events.",
+      "Image": "https://i.ibb.co/gdqz5YF/promotion.jpg",
+      "Price": "$2,500 - $12,000",
+      "Availability": "Year-round",
+      "Duration": "Customizable",
+      "Features": ["Marketing Campaigns", "Social Media Promotion", "Event Branding"]
+  }
 ]
-
-  
