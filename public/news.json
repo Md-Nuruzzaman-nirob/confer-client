@@ -1,0 +1,153 @@
+[
+    {
+      "id": "1",
+      "Title": "Streamline Your Corporate Event with Expert Event Planning and Management",
+      "Description": "Discover how our Event Planning and Management services can take the stress out of organizing your next corporate event. From concept to execution, we ensure a seamless and memorable experience for your attendees.",
+      "Image": "event_planning.jpg",
+      "Date": "2023-10-15",
+      "Time": "09:00 AM - 05:00 PM",
+      "Location": "Grand Convention Center, New York",
+      "Link": "https://example.com/news1"
+    },
+    {
+      "id": "2",
+      "Title": "Elevate Your Presentations with State-of-the-Art Audio-Visual Production",
+      "Description": "Explore the world of high-quality audio-visual production for your corporate presentations. Our services provide top-notch equipment and technical support, guaranteeing a flawless delivery of your message.",
+      "Image": "audio_visual.jpg",
+      "Date": "2023-11-05",
+      "Time": "10:30 AM - 04:30 PM",
+      "Location": "TechExpo Center, San Francisco",
+      "Link": "https://example.com/news2"
+    },
+    {
+      "id": "3",
+      "Title": "Culinary Delights Await: Catering and Food Services for Your Corporate Gathering",
+      "Description": "Indulge your guests with a diverse range of catering options. From delectable buffet setups to gourmet dining experiences, our Catering and Food Services will leave a lasting impression on your event attendees.",
+      "Image": "catering.jpg",
+      "Date": "2023-09-20",
+      "Time": "06:00 PM - 09:00 PM",
+      "Location": "Elegance Ballroom, Chicago",
+      "Link": "https://example.com/news3"
+    },
+    {
+      "id": "4",
+      "Title": "Find the Perfect Venue with Venue Selection and Booking Services",
+      "Description": "Choosing the right venue is crucial for the success of your corporate event. Our experts specialize in finding and securing venues that match your event's needs and size requirements, ensuring a flawless event experience.",
+      "Image": "venue_selection.jpg",
+      "Date": "2023-12-10",
+      "Time": "08:00 AM - 06:00 PM",
+      "Location": "Marriott Convention Center, Los Angeles",
+      "Link": "https://example.com/news4"
+    },
+    {
+      "id": "5",
+      "Title": "Transform Your Event Space with Stunning Event Decor and Design",
+      "Description": "Elevate your event's ambiance with captivating decor and thematic design. Our Event Decor and Design services create visually appealing environments that set the stage for a memorable occasion.",
+      "Image": "event_decor.jpg",
+      "Date": "2023-10-25",
+      "Time": "10:00 AM - 08:00 PM",
+      "Location": "Artistic Events Hall, Miami",
+      "Link": "https://example.com/news5"
+    },
+    {
+      "id": "6",
+      "Title": "Engage and Entertain: Booking Entertainment Acts for Your Event",
+      "Description": "Keep your attendees entertained with our Entertainment Booking services. From live bands to motivational speakers, we have a wide range of options to add excitement and engagement to your corporate event.",
+      "Image": "entertainment_booking.jpg",
+      "Date": "2023-11-18",
+      "Time": "07:00 PM - 10:00 PM",
+      "Location": "City Auditorium, Boston",
+      "Link": "https://example.com/news6"
+    },
+    {
+      "id": "7",
+      "Title": "Simplify Registration with Event Registration and Ticketing Solutions",
+      "Description": "Say goodbye to registration hassles. Our Event Registration and Ticketing services offer online registration systems and streamlined check-in solutions to ensure a smooth start to your event.",
+      "Image": "registration.jpg",
+      "Date": "2023-09-15",
+      "Time": "08:30 AM - 04:00 PM",
+      "Location": "TechHub Conference Center, Seattle",
+      "Link": "https://example.com/news7"
+    },
+    {
+      "id": "8",
+      "Title": "Embrace Technology for Enhanced Event Experiences",
+      "Description": "Stay ahead in the digital age with Event Technology Services. Explore event apps, virtual platforms, and audience engagement tools that will elevate the overall experience for your attendees.",
+      "Image": "event_technology.jpg",
+      "Date": "2023-10-05",
+      "Time": "10:00 AM - 03:00 PM",
+      "Location": "Innovate Tech Park, Austin",
+      "Link": "https://example.com/news8"
+    },
+    {
+      "id": "9",
+      "Title": "Capture Moments and Memories with Event Photography and Videography",
+      "Description": "Preserve the magic of your corporate event with professional photographers and videographers. Our services ensure that every moment is captured, and promotional materials are crafted to perfection.",
+      "Image": "photography_videography.jpg",
+      "Date": "2023-11-30",
+      "Time": "11:00 AM - 07:00 PM",
+      "Location": "Studio 360, Denver",
+      "Link": "https://example.com/news9"
+    },
+    {
+      "id": "10",
+      "Title": "Seamless Transportation and Logistics for Stress-Free Events",
+      "Description": "Leave the logistics to us. Our Transportation and Logistics services handle transportation arrangements, event logistics, and travel coordination, guaranteeing a hassle-free experience for your attendees.",
+      "Image": "transportation_logistics.jpg",
+      "Date": "2023-12-05",
+      "Time": "06:30 AM - 09:30 PM",
+      "Location": "Gateway Hotel, Dallas",
+      "Link": "https://example.com/news10"
+    },
+    {
+      "id": "11",
+      "Title": "Boost Team Cohesion with Team Building and Training Workshops",
+      "Description": "Invest in your team's growth and collaboration with our Team Building and Training Workshops. We offer a variety of activities and sessions to foster unity and skill development among your employees.",
+      "Image": "team_building.jpg",
+      "Date": "2023-11-08",
+      "Time": "09:30 AM - 03:30 PM",
+      "Location": "Leadership Institute, San Diego",
+      "Link": "https://example.com/news11"
+    },
+    {
+      "id": "12",
+      "Title": "Create Buzz with Effective Brand Promotion and Marketing",
+      "Description": "Generate excitement and awareness for your corporate event with our Brand Promotion and Marketing services. Our tailored strategies and campaigns ensure your event gets the attention it deserves.",
+      "Image": "brand_promotion.jpg",
+      "Date": "2023-09-28",
+      "Time": "02:00 PM - 05:00 PM",
+      "Location": "Marketing Hub, Atlanta",
+      "Link": "https://example.com/news12"
+    },
+    {
+      "id": "13",
+      "Title": "Unleash Creativity with Unique Event Decor and Design",
+      "Description": "Transform your corporate event into a work of art with our Event Decor and Design services. From thematic design to immersive environments, our experts will create an unforgettable atmosphere.",
+      "Image": "event_decor_unique.jpg",
+      "Date": "2023-12-20",
+      "Time": "11:00 AM - 07:00 PM",
+      "Location": "Artistry Center, Chicago",
+      "Link": "https://example.com/news13"
+    },
+    {
+      "id": "14",
+      "Title": "Enhance Engagement with Interactive Event Technology",
+      "Description": "Take your corporate event to the next level with interactive Event Technology Services. Explore augmented reality experiences, live polling, and networking tools for unparalleled attendee engagement.",
+      "Image": "interactive_technology.jpg",
+      "Date": "2023-11-15",
+      "Time": "09:00 AM - 06:00 PM",
+      "Location": "Tech Innovators Arena, San Francisco",
+      "Link": "https://example.com/news14"
+    },
+    {
+      "id": "15",
+      "Title": "Culinary Journey: Beyond Catering and Food Services",
+      "Description": "Embark on a culinary adventure at your corporate event with our Beyond Catering and Food Services. Experience gourmet food tastings, interactive cooking demos, and exotic cuisine from around the world.",
+      "Image": "culinary_journey.jpg",
+      "Date": "2023-10-30",
+      "Time": "07:30 PM - 10:00 PM",
+      "Location": "Epicurean Delights Hall, New Orleans",
+      "Link": "https://example.com/news15"
+    }
+]
+  
