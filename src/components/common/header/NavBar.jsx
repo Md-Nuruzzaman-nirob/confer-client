@@ -84,13 +84,13 @@ const NavBar = () => {
           </Typography>
           <div className="flex-1 flex items-center justify-between gap-4 py-5">
             <div className="hidden lg:block">{navList}</div>
-            <Link to={"/login"}>
+            <Link to={"/signin"}>
               {" "}
               <Button
                 size="md"
                 className="hidden lg:inline-block bg-gradient-to-b from-[#e83e8c] to-[#6610f2] font-Poppins text-sm font-semibold px-6 py-2 rounded-3xl"
               >
-                <span>Log in</span>
+                <span>Sign in</span>
               </Button>
             </Link>
             <IconButton
@@ -134,14 +134,14 @@ const NavBar = () => {
         </div>
         <MobileNav open={openNav}>
           {navList}
-          <Link to={"/login"}>
+          <Link to={"/signin"}>
             <Button
               variant="gradient"
               size="md"
               fullWidth
               className="mb-2 bg-gradient-to-b from-[#e83e8c] to-[#6610f2] font-Poppins text-sm font-medium py-2 rounded-3xl mt-3"
             >
-              <span>Log in</span>
+              <span>Sign in</span>
             </Button>
           </Link>
         </MobileNav>
