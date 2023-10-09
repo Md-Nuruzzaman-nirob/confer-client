@@ -82,11 +82,7 @@ const NavBar = () => {
   return (
     <div className="bg-[#111344]">
       <div className="h-max rounded-none py-2 px-4 max-w-7xl mx-auto opacity-none border-none">
-        <div
-          className="flex items-center justify-between"
-          data-aos="fade-down"
-          data-aos-duration="1500"
-        >
+        <div className="flex items-center justify-between">
           <Typography
             as="a"
             href="#"
@@ -95,15 +91,9 @@ const NavBar = () => {
             <img src={logo} alt="" />
           </Typography>
           <div className="flex-1 flex items-center justify-between gap-4 py-5">
-            <div
-              className="hidden lg:block"
-              data-aos="fade-down"
-              data-aos-duration="1500"
-            >
-              {navList}
-            </div>
+            <div className="hidden lg:block">{navList}</div>
             {!user ? (
-              <Link to={"/Login"} data-aos="fade-down" data-aos-duration="1500">
+              <Link to={"/Login"}>
                 {" "}
                 <Button
                   size="md"
@@ -113,12 +103,8 @@ const NavBar = () => {
                 </Button>
               </Link>
             ) : (
-              <div
-                className="hidden lg:block"
-                data-aos="fade-down"
-                data-aos-duration="1500"
-              >
-                <Menu data-aos="fade-down" data-aos-duration="1500">
+              <div className="hidden lg:block">
+                <Menu>
                   <MenuHandler>
                     {user.photoURL ? (
                       <img
@@ -263,10 +249,10 @@ const NavBar = () => {
             </IconButton>
           </div>
         </div>
-        <MobileNav open={openNav} data-aos="fade-down" data-aos-duration="1500">
+        <MobileNav open={openNav}>
           {navList}
           {!user ? (
-            <Link to={"/login"} data-aos="fade-down" data-aos-duration="1500">
+            <Link to={"/login"}>
               <Button
                 variant="gradient"
                 size="md"
@@ -277,7 +263,7 @@ const NavBar = () => {
               </Button>
             </Link>
           ) : (
-            <Menu data-aos="fade-down" data-aos-duration="1500">
+            <Menu>
               <MenuHandler>
                 {user.photoURL ? (
                   <img

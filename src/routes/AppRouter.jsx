@@ -23,11 +23,7 @@ const AppRouter = createBrowserRouter([
       },
       {
         path: "/services",
-        element: (
-          <PrivetRoute>
-            <Services></Services>
-          </PrivetRoute>
-        ),
+        element: <Services></Services>,
         loader: () => fetch("/services.json"),
       },
       {
@@ -50,11 +46,7 @@ const AppRouter = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: (
-          <PrivetRoute>
-            <Contact></Contact>
-          </PrivetRoute>
-        ),
+        element: <Contact></Contact>,
       },
       {
         path: "/login",
