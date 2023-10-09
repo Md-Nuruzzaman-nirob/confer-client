@@ -2,12 +2,12 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "../components/layouts/Root";
 import Home from "../components/pages/home/Home";
 import Login from "../components/pages/auth/Login";
-import SignUp from "../components/pages/auth/SignUp";
 import PrivetRoute from "./PrivetRoute";
 import Services from "../components/pages/services/Services";
 import Blog from "../components/pages/blogs/Blog";
 import Contact from "../components/pages/contact/Contact";
 import DetailsServiceCard from "../components/pages/services/DetailsServiceCard";
+import Register from "../components/pages/auth/Register";
 
 const AppRouter = createBrowserRouter([
   {
@@ -17,6 +17,7 @@ const AppRouter = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: () => fetch("/news.json"),
       },
       {
         path: "/services",
@@ -43,6 +44,7 @@ const AppRouter = createBrowserRouter([
             <Blog></Blog>
           </PrivetRoute>
         ),
+        loader: () => fetch("/news.json"),
       },
       {
         path: "/contact",
@@ -53,12 +55,12 @@ const AppRouter = createBrowserRouter([
         ),
       },
       {
-        path: "/signin",
+        path: "/login",
         element: <Login></Login>,
       },
       {
-        path: "/signup",
-        element: <SignUp></SignUp>,
+        path: "/register",
+        element: <Register></Register>,
       },
     ],
   },

@@ -16,7 +16,7 @@ const ServicesCard = ({ serviceCard }) => {
     <Card className="mt-8 text-start">
       <CardBody className="p-0">
         <img
-          className="w-full h-[225px] xl:h-[280px] rounded-md"
+          className="w-full h-[225px] xl:h-[280px] rounded-t-xl"
           src={Image}
           alt=""
         />

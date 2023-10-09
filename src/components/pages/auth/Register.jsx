@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogin from "./SocialLogin";
 import { Button } from "@material-tailwind/react";
 import useAuthContext from "../../../hooks/useAuthContext";
@@ -8,7 +8,7 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import { PiWarningOctagonFill } from "react-icons/pi";
 
-const SignUp = () => {
+const Register = () => {
   // use state
   const [nameValidation, setNameValidation] = useState("");
   const [emailValidation, setEmailValidation] = useState("");
@@ -19,6 +19,8 @@ const SignUp = () => {
   const { createUser } = useAuthContext();
   // navigate
   const navigate = useNavigate();
+  // use location
+  const location = useLocation();
 
   // name validation
   const handleNameValidation = (e) => {
@@ -96,7 +98,7 @@ const SignUp = () => {
               duration: 6000,
             }
           );
-          navigate("/");
+          navigate(location?.state ? location.state : "/");
         });
       })
       .catch((error) => {
@@ -108,12 +110,17 @@ const SignUp = () => {
   };
 
   return (
-    <div className="h-[90vh] flex items-center justify-center my-10">
-      <div className="relative flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none max-w-[300px] md:max-w-md">
+    <div className="flex justify-center items-center flex-col gap-10 mt-20  mb-32">
+      <div>
+        <h1 className="text-center text-4xl font-bold bg-gradient-to-r from-[#e83e8c]  to-[#6610f2] h-16 bg-clip-text text-transparent">
+          Begin Your Journey With CONFER - Register Here
+        </h1>
+      </div>
+      <div className="relative flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none w-[300px] md:w-[420px] mx-5 md:mx-0">
         <SocialLogin></SocialLogin>
         <div className="flex items-center">
           <div className="flex-1 border-t border-gray-300"></div>
-          <div className="mx-4">Or, Sign Up with your email</div>
+          <div className="mx-4">Or, Register with your email</div>
           <div className="flex-1 border-t border-gray-300"></div>
         </div>
         <form onSubmit={handleCreateUser} className="mt-6 mb-2 max-w-screen-lg">
@@ -150,7 +157,6 @@ const SignUp = () => {
                 type="url"
                 placeholder="Enter photo URL"
                 name="url"
-                required
               />
               <label
                 className="px-2 py-1 text-gray-600 text-xs"
@@ -198,7 +204,7 @@ const SignUp = () => {
                 htmlFor="inputField"
               ></label>
               {passwordValidation && (
-                <p className="max-w-[413px] flex items-center gap-1 text-[#e83e8c] text-sm mt-1">
+                <p className="flex items-center gap-1 text-[#e83e8c] text-sm mt-1">
                   <span>
                     {" "}
                     <PiWarningOctagonFill></PiWarningOctagonFill>
@@ -266,16 +272,16 @@ const SignUp = () => {
             fullWidth
             className="rounded-3xl bg-gradient-to-b from-[#e83e8c] to-[#6610f2] font-Poppins font-medium text-base py-2 mt-3"
           >
-            Sign Up
+            Register
           </Button>
           <p className="mt-4 block text-center text-base font-medium">
             Already have an account?
             <Link
-              to={"/signin"}
+              to={"/login"}
               className="font-medium text-[#e83e8c] transition-colors hover:underline ml-1"
               href="#"
             >
-              Sign In
+              Login
             </Link>
           </p>
         </form>
@@ -284,4 +290,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Register;

@@ -18,14 +18,14 @@ const Banner = () => {
               <Typography
                 variant="h1"
                 color="white"
-                className="mb-4 text-xl md:text-3xl lg:text-4xl xl:text-5xl"
+                className="mb-1 md:mb-4 text-base md:text-2xl lg:text-4xl xl:text-5xl uppercase font-Poppins"
               >
                 Your Event, Our Expertise
               </Typography>
               <Typography
                 variant="lead"
                 color="white"
-                className="mb-5 md:mb-8 lg:mb-12 opacity-80 text-xs md:text-base lg:text-xl"
+                className="md:mb-8 lg:mb-12 opacity-80 text-[8px] md:text-[10px] lg:text-base uppercase font-Poppins"
               >
                 At CONFER, we bring your corporate events to life with our
                 unwavering dedication and expertise. Our seasoned professionals
@@ -91,18 +91,18 @@ const Banner = () => {
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 grid h-full w-full items-center bg-black/75">
-            <div className="w-3/4 pl-12 md:w-3/4 md:pl-20 lg:pl-32">
+            <div className="pl-12 pr-6 md:w-3/4 md:pl-20 lg:pl-32">
               <Typography
                 variant="h1"
                 color="white"
-                className="mb-4 text-xl md:text-4xl lg:text-5xl"
+                className="mb-1 md:mb-4 text-base md:text-2xl lg:text-4xl xl:text-5xl uppercase font-Poppins"
               >
                 Your Success, Our Mission
               </Typography>
               <Typography
                 variant="lead"
                 color="white"
-                className="mb-5 md:mb-8 lg:mb-12 opacity-80 text-xs md:text-base lg:text-xl"
+                className="md:mb-8 lg:mb-12 opacity-80 text-[7px] md:text-[10px] lg:text-base uppercase font-Poppins"
               >
                 Your success is our ultimate mission. We&apos;re here to ensure
                 that your corporate events not only meet but exceed your goals,

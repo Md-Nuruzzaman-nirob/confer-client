@@ -17,7 +17,7 @@ const Sponsors = () => {
         OFFICIAL SPONSOR
       </h1>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 max-w-7xl mx-5 xl:mx-auto pb-10 mt-12">
+      <div className="grid grid-cols-2 md:grid-cols-4 max-w-7xl mx-5 xl:mx-auto pb-20 mt-12">
         <div className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100">
           <img src={logo1} alt="" />
         </div>

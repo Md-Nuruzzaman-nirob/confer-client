@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogin from "./SocialLogin";
 import { Button } from "@material-tailwind/react";
 import useAuthContext from "../../../hooks/useAuthContext";
@@ -17,6 +17,8 @@ const Login = () => {
   const { signInUser } = useAuthContext();
   // navigate
   const navigate = useNavigate();
+  // use location
+  const location = useLocation();
   // use ref
   const emailRef = useRef();
 
@@ -28,11 +30,11 @@ const Login = () => {
 
     signInUser(email, password)
       .then(() => {
-        toast.success("Sign In successfully.", {
+        toast.success("Login successfully.", {
           position: "top-center",
           duration: 4000,
         });
-        navigate("/");
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         if (
@@ -69,15 +71,23 @@ const Login = () => {
   };
 
   return (
-    <div className="h-[90vh] flex items-center justify-center">
-      <div className="relative flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none max-w-[300px] md:max-w-md">
+    <div className="flex items-center justify-center flex-col gap-20 mt-20 mb-48">
+      <div>
+        <h1 className="text-center text-4xl font-bold bg-gradient-to-r from-[#e83e8c]  to-[#6610f2] h-16 bg-clip-text text-transparent">
+          Welcome To The CONFER - Login Now
+        </h1>
+      </div>
+      <div className="flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none w-[300px] md:w-[420px]">
         <SocialLogin></SocialLogin>
         <div className="flex items-center">
           <div className="flex-1 border-t border-gray-300"></div>
-          <div className="mx-4">Or, Sign In with your email</div>
+          <div className="mx-4">Or, Login with your email</div>
           <div className="flex-1 border-t border-gray-300"></div>
         </div>
-        <form onSubmit={handleSignInUser} className="mt-8 mb-2 max-w-screen-lg">
+        <form
+          onSubmit={handleSignInUser}
+          className="mt-8 mb-2 max-w-screen-lg max-h-[90vh]"
+        >
           <div className="flex flex-col gap-6">
             <div className="w-full">
               <div className="font-medium ml-6 mb-2">Email</div>
@@ -117,7 +127,7 @@ const Login = () => {
                 htmlFor="inputField"
               ></label>
               {passwordValidation && (
-                <p className="max-w-[413px] flex items-center gap-1 text-[#e83e8c] text-sm mt-1">
+                <p className="flex items-center gap-1 text-[#e83e8c] text-sm mt-1">
                   <span>
                     {" "}
                     <PiWarningOctagonFill></PiWarningOctagonFill>
@@ -178,16 +188,16 @@ const Login = () => {
             fullWidth
             className="rounded-3xl bg-gradient-to-b from-[#e83e8c] to-[#6610f2] font-Poppins font-medium text-base py-2 mt-3"
           >
-            Sign In
+            Login
           </Button>
           <p className="mt-4 block text-center text-base font-medium">
             Don&apos;t have an account?
             <Link
-              to={"/signup"}
+              to={"/register"}
               className="font-medium text-[#e83e8c] transition-colors hover:underline ml-2"
               href="#"
             >
-              Sign Up
+              Register
             </Link>
           </p>
         </form>

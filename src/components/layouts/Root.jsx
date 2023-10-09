@@ -6,8 +6,8 @@ import { Toaster } from "react-hot-toast";
 const Root = () => {
   return (
     <div className="font-Poppins ">
-      <NavBar></NavBar>
       <Toaster></Toaster>
+      <NavBar></NavBar>
       <Outlet></Outlet>
       <Footer></Footer>
     </div>
