@@ -9,7 +9,6 @@ import {
 import { Link } from "react-router-dom";
 
 const ServicesCard = ({ serviceCard }) => {
-  console.log(serviceCard);
   const { ID, Image, ServiceName, Price, Description } = serviceCard || {};
 
   return (
