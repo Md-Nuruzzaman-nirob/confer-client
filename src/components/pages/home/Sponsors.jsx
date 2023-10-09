@@ -30,60 +30,28 @@ const Sponsors = () => {
         data-aos="fade-up"
         data-aos-duration="1500"
       >
-        <div
-          className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-        >
+        <div className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out hover:opacity-100">
           <img src={logo1} alt="" />
         </div>
-        <div
-          className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-        >
+        <div className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out hover:opacity-100">
           <img src={logo2} alt="" />
         </div>
-        <div
-          className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-        >
+        <div className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out hover:opacity-100">
           <img src={logo3} alt="" />
         </div>
-        <div
-          className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-        >
+        <div className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out hover:opacity-100">
           <img src={logo4} alt="" />
         </div>
-        <div
-          className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-        >
+        <div className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out hover:opacity-100">
           <img src={logo5} alt="" />
         </div>
-        <div
-          className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-        >
+        <div className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out hover:opacity-100">
           <img src={logo6} alt="" />
         </div>
-        <div
-          className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-        >
+        <div className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out hover:opacity-100">
           <img src={logo7} alt="" />
         </div>
-        <div
-          className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-        >
+        <div className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out hover:opacity-100">
           <img src={logo8} alt="" />
         </div>
       </div>

@@ -1,10 +1,31 @@
-import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
 import { Button } from "@material-tailwind/react";
 import NavBar from "../../common/header/NavBar";
 import Footer from "../../common/footer/Footer";
+import { useState } from "react";
+import { PiWarningOctagonFill } from "react-icons/pi";
 
 const Contact = () => {
+  const [emailValidation, setEmailValidation] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+
+    const email = form.get("email");
+    // const phone = form.get("phone");
+
+    if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+      return setEmailValidation("Please enter a valid email address.");
+    }
+    setEmailValidation("");
+
+    toast.success("Your message sent successfully.", {
+      position: "top-center",
+      duration: 4000,
+    });
+    e.currentTarget.reset();
+  };
+
   return (
     <>
       <NavBar></NavBar>
@@ -23,7 +44,7 @@ const Contact = () => {
           </div>
           <div className="flex-1 p-6">
             <h2 className="text-2xl font-semibold mb-6">Contact Us</h2>
-            <form className="w-full">
+            <form onSubmit={handleSubmit} className="w-full">
               <div className="grid grid-cols-2 gap-4 mb-8">
                 <div>
                   <label
@@ -74,6 +95,15 @@ const Contact = () => {
                     placeholder="Enter email Address"
                     required
                   />
+                  {emailValidation && (
+                    <p className="flex items-center gap-1 text-[#e83e8c] text-sm mt-1">
+                      <span>
+                        {" "}
+                        <PiWarningOctagonFill></PiWarningOctagonFill>
+                      </span>
+                      {emailValidation}
+                    </p>
+                  )}
                 </div>
                 <div>
                   <label
@@ -109,14 +139,8 @@ const Contact = () => {
                 ></textarea>
               </div>
               <Button
-                // onClick={() =>
-                //   toast.success("Your message sent successfully.", {
-                //     position: "top-center",
-                //     duration: 4000,
-                //   })
-                // }
                 className="flex select-none items-center gap-2 rounded-3xl py-3 px-6 text-center align-middle font-Poppins text-xs font-semibold uppercase bg-gradient-to-b from-[#e83e8c] to-[#6610f2]"
-                type="button"
+                type="submit"
               >
                 send message
                 <svg

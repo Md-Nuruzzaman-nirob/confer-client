@@ -1,7 +1,29 @@
 import { Button } from "@material-tailwind/react";
+import { useState } from "react";
+import toast from "react-hot-toast";
+import { PiWarningOctagonFill } from "react-icons/pi";
 import { Link } from "react-router-dom";
 
 const ContactUs = () => {
+  const [emailValidation, setEmailValidation] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+
+    const email = form.get("email");
+    // const phone = form.get("phone");
+
+    if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+      return setEmailValidation("Please enter a valid email address.");
+    }
+    setEmailValidation("");
+
+    toast.success("Your message sent successfully.", {
+      position: "top-center",
+      duration: 4000,
+    });
+    e.currentTarget.reset();
+  };
   return (
     <div className="bg-indigo-900">
       <h4
@@ -49,7 +71,7 @@ const ContactUs = () => {
             data-aos="fade-up"
             data-aos-duration="1500"
           >
-            <form className="w-full">
+            <form onSubmit={handleSubmit} className="w-full">
               <div
                 className="grid grid-cols-2 gap-4 mb-8"
                 data-aos="fade-up"
@@ -63,7 +85,7 @@ const ContactUs = () => {
                     type="text"
                     id="first_name"
                     name="first_name"
-                    className="w-full px-4 py-2 border focus:outline-none focus:border-[#e83e8c] rounded-3xl text-xs md:text-sm"
+                    className="w-full px-4 py-2 border focus:outline-none focus:border-[#e83e8c] rounded-3xl text-xs md:text-sm text-black"
                     placeholder="Enter first Name"
                     required
                   />
@@ -76,7 +98,7 @@ const ContactUs = () => {
                     type="text"
                     id="last_name"
                     name="last_name"
-                    className="w-full px-4 py-2 border rounded-3xl focus:outline-none focus:border-[#e83e8c] text-xs md:text-sm"
+                    className="w-full px-4 py-2 border rounded-3xl focus:outline-none focus:border-[#e83e8c] text-xs md:text-sm text-black"
                     placeholder="Enter last Name"
                     required
                   />
@@ -95,10 +117,19 @@ const ContactUs = () => {
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full px-4 py-2 border rounded-3xl focus:outline-none focus:border-[#e83e8c] text-xs md:text-sm"
+                    className="w-full px-4 py-2 border rounded-3xl focus:outline-none focus:border-[#e83e8c] text-xs md:text-sm text-black"
                     placeholder="Enter email Address"
                     required
                   />
+                  {emailValidation && (
+                    <p className="flex items-center gap-1 text-[#e83e8c] text-sm mt-1">
+                      <span>
+                        {" "}
+                        <PiWarningOctagonFill></PiWarningOctagonFill>
+                      </span>
+                      {emailValidation}
+                    </p>
+                  )}
                 </div>
                 <div>
                   <label htmlFor="phone" className="block mb-2 ml-4">
@@ -108,7 +139,7 @@ const ContactUs = () => {
                     type="tel"
                     id="phone"
                     name="phone"
-                    className="w-full px-4 py-2 border rounded-3xl focus:outline-none focus:border-[#e83e8c] text-xs md:text-sm"
+                    className="w-full px-4 py-2 border rounded-3xl focus:outline-none focus:border-[#e83e8c] text-xs md:text-sm text-black"
                     placeholder="Enter phone Number"
                     required
                   />
@@ -122,20 +153,14 @@ const ContactUs = () => {
                   id="message"
                   name="message"
                   rows="4"
-                  className="w-full px-4 py-2 border rounded-lg  focus:outline-none focus:border-[#e83e8c] text-xs md:text-sm"
+                  className="w-full px-4 py-2 border rounded-lg  focus:outline-none focus:border-[#e83e8c] text-xs md:text-sm text-black"
                   placeholder="Your Message"
                   required
                 ></textarea>
               </div>
               <Button
-                // onClick={() =>
-                //   toast.success("Your message sent successfully.", {
-                //     position: "top-center",
-                //     duration: 4000,
-                //   })
-                // }
                 className="flex select-none items-center gap-2 rounded-3xl py-3 px-6 text-center align-middle font-Poppins text-xs uppercase font-semibold bg-[#e83e8c] text-white"
-                type="button"
+                type="submit"
                 data-aos="fade-up"
                 data-aos-duration="1500"
               >
