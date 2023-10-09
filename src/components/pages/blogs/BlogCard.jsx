@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 
 const BlogCard = ({ newsCard }) => {
   const { Image, Title, Description, Date, Time, Location } = newsCard || {};
-  console.log(newsCard);
 
   return (
     <div
@@ -10,8 +9,12 @@ const BlogCard = ({ newsCard }) => {
       data-aos-duration="1500"
       className="relative flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mb-8"
     >
-      <div className="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
-        <img src={Image} alt="" />
+      <div className="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none w-full  h-[225px] xl:h-[280px] rounded-t-xl">
+        <img
+          className="w-full  h-[225px] xl:h-[280px] rounded-t-xl"
+          src={Image}
+          alt=""
+        />
       </div>
       <div className="p-4">
         <h4 className="block lg:text-lg font-semibold text-black">{Title}</h4>
