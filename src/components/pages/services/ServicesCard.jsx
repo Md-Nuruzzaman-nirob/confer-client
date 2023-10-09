@@ -13,7 +13,11 @@ const ServicesCard = ({ serviceCard }) => {
   const { ID, Image, ServiceName, Price, Description } = serviceCard || {};
 
   return (
-    <Card className="mt-8 text-start">
+    <Card
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      className="mt-8 text-start"
+    >
       <CardBody className="p-0">
         <img
           className="w-full h-[225px] xl:h-[280px] rounded-t-xl"

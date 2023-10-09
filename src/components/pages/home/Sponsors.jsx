@@ -10,36 +10,80 @@ import logo8 from "../../../assets/p-8.png.webp";
 const Sponsors = () => {
   return (
     <div className="bg-[#111344]">
-      <h4 className="text-[#e83e8c] text-center pt-16 pb-2">
+      <h4
+        className="text-[#e83e8c] text-center pt-28 pb-2"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         PARTNERS & SPONSORS
       </h4>
-      <h1 className="text-white text-xl md:text-3xl text-center font-semibold">
+      <h1
+        className="text-white text-2xl md:text-3xl text-center font-semibold"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         OFFICIAL SPONSOR
       </h1>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 max-w-7xl mx-5 xl:mx-auto pb-20 mt-12">
-        <div className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100">
+      <div
+        className="grid grid-cols-2 md:grid-cols-4 max-w-7xl mx-5 xl:mx-auto pb-40 mt-12"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <div
+          className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <img src={logo1} alt="" />
         </div>
-        <div className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100">
+        <div
+          className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <img src={logo2} alt="" />
         </div>
-        <div className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100">
+        <div
+          className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <img src={logo3} alt="" />
         </div>
-        <div className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100">
+        <div
+          className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <img src={logo4} alt="" />
         </div>
-        <div className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100">
+        <div
+          className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <img src={logo5} alt="" />
         </div>
-        <div className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100">
+        <div
+          className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <img src={logo6} alt="" />
         </div>
-        <div className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100">
+        <div
+          className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <img src={logo7} alt="" />
         </div>
-        <div className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100">
+        <div
+          className="flex justify-center items-center p-10 border opacity-20 transition-opacity duration-500 ease-in-out delay-10 hover:opacity-100"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <img src={logo8} alt="" />
         </div>
       </div>

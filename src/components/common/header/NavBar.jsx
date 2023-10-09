@@ -17,7 +17,7 @@ import useAuthContext from "../../../hooks/useAuthContext";
 const NavBar = () => {
   const [openNav, setOpenNav] = useState(false);
 
-  const { user, logOut, loader } = useAuthContext();
+  const { user, logOut } = useAuthContext();
 
   useEffect(() => {
     window.addEventListener(
@@ -25,13 +25,6 @@ const NavBar = () => {
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
-
-  if (loader) {
-    return;
-    // <div className="h-[100vh] flex justify-center items-center">
-    //   <Spinner color="purple" />
-    // </div>
-  }
 
   const navList = (
     <ul className="flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 uppercase font-medium mb-2">
@@ -89,7 +82,11 @@ const NavBar = () => {
   return (
     <div className="bg-[#111344]">
       <div className="h-max rounded-none py-2 px-4 max-w-7xl mx-auto opacity-none border-none">
-        <div className="flex items-center justify-between">
+        <div
+          className="flex items-center justify-between"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
           <Typography
             as="a"
             href="#"
@@ -98,9 +95,15 @@ const NavBar = () => {
             <img src={logo} alt="" />
           </Typography>
           <div className="flex-1 flex items-center justify-between gap-4 py-5">
-            <div className="hidden lg:block">{navList}</div>
+            <div
+              className="hidden lg:block"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+            >
+              {navList}
+            </div>
             {!user ? (
-              <Link to={"/Login"}>
+              <Link to={"/Login"} data-aos="fade-down" data-aos-duration="1500">
                 {" "}
                 <Button
                   size="md"
@@ -110,8 +113,12 @@ const NavBar = () => {
                 </Button>
               </Link>
             ) : (
-              <div className="hidden lg:block">
-                <Menu>
+              <div
+                className="hidden lg:block"
+                data-aos="fade-down"
+                data-aos-duration="1500"
+              >
+                <Menu data-aos="fade-down" data-aos-duration="1500">
                   <MenuHandler>
                     {user.photoURL ? (
                       <img
@@ -256,10 +263,10 @@ const NavBar = () => {
             </IconButton>
           </div>
         </div>
-        <MobileNav open={openNav}>
+        <MobileNav open={openNav} data-aos="fade-down" data-aos-duration="1500">
           {navList}
           {!user ? (
-            <Link to={"/login"}>
+            <Link to={"/login"} data-aos="fade-down" data-aos-duration="1500">
               <Button
                 variant="gradient"
                 size="md"
@@ -270,7 +277,7 @@ const NavBar = () => {
               </Button>
             </Link>
           ) : (
-            <Menu>
+            <Menu data-aos="fade-down" data-aos-duration="1500">
               <MenuHandler>
                 {user.photoURL ? (
                   <img

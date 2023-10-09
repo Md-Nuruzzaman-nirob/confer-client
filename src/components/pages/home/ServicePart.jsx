@@ -19,17 +19,30 @@ const ServicePart = () => {
 
   return (
     <div className="max-w-7xl mx-5 xl:mx-auto text-center">
-      <h1 className="text-xl md:text-3xl lg:text-4xl font-bold mt-20 mb-3 lg:mb-5 uppercase text-[#e83e8c]">
+      <h1
+        className="text-xl md:text-3xl lg:text-4xl font-bold mt-20 mb-3 lg:mb-5 uppercase text-[#e83e8c]"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         Our Comprehensive Services
       </h1>
-      <p className="text-xs md:text-sm lg:text-base opacity-80 md:w-2/3 mx-auto uppercase">
+      <p
+        className="text-xs md:text-sm lg:text-base opacity-80 w-11/12 md:w-2/3 mx-auto uppercase"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         Explore our range of expert services designed to elevate your corporate
         events. From event planning to entertainment, we have you covered.
         Discover the perfect solution for your next gathering.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-7 mx-auto mt-6 mb-10">
-        {serviceData.slice(0, 3).map((serviceCard) => (
-          <Card key={serviceCard.ID} className="mt-8 text-start">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-7 mx-auto mt-3 lg:mt-6 mb-10">
+        {serviceData.slice(0, 6).map((serviceCard) => (
+          <Card
+            key={serviceCard.ID}
+            className="mt-8 text-start "
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <CardBody className="p-0">
               <img
                 className="w-full h-[225px] xl:h-[280px] rounded-t-xl"
@@ -77,7 +90,11 @@ const ServicePart = () => {
         ))}
       </div>
       <Link to={"/services"} className="flex justify-center items-center mb-20">
-        <Button className="rounded-3xl bg-gradient-to-b from-[#e83e8c] to-[#6610f2] font-Poppins font-medium text-base">
+        <Button
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          className="rounded-3xl bg-gradient-to-b from-[#e83e8c] to-[#6610f2] font-Poppins font-medium text-base"
+        >
           <span className="inline-flex items-center gap-2">
             more services
             <span>

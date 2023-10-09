@@ -14,7 +14,11 @@ const Banner = () => {
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
-            <div className="w-3/4 text-center md:w-2/4">
+            <div
+              className="w-3/4 text-center md:w-2/4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <Typography
                 variant="h1"
                 color="white"
@@ -35,7 +39,11 @@ const Banner = () => {
                 Explore our comprehensive range of services, designed to meet
                 every aspect of your event needs.
               </Typography>
-              <div className="flex justify-center gap-2">
+              <div
+                className="flex justify-center gap-2"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
                 <Link to={"/services"} className="hidden lg:block">
                   <Button
                     size="lg"
@@ -91,7 +99,11 @@ const Banner = () => {
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 grid h-full w-full items-center bg-black/75">
-            <div className="pl-12 pr-6 md:w-3/4 md:pl-20 lg:pl-32">
+            <div
+              className="pl-12 pr-6 md:w-3/4 md:pl-20 lg:pl-32"
+              data-aos="fade-up"
+              data-aos-duration="1800"
+            >
               <Typography
                 variant="h1"
                 color="white"
@@ -108,7 +120,11 @@ const Banner = () => {
                 that your corporate events not only meet but exceed your goals,
                 leaving you with nothing but success stories.
               </Typography>
-              <div className="flex gap-2">
+              <div
+                className="flex gap-2"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
                 <Link to={"/services"} className="hidden lg:block">
                   <Button
                     size="lg"

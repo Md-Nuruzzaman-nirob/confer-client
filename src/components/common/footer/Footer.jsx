@@ -3,19 +3,29 @@ import { Typography } from "@material-tailwind/react";
 const SITEMAP = [
   {
     title: "Company",
-    links: ["About Us", "Careers", "Our Team", "Projects"],
+    links: ["Confer", "Programming-Hero", "Neptune", "Nirob"],
   },
   {
     title: "Help Center",
-    links: ["Discord", "Twitter", "GitHub", "Contact Us"],
+    links: ["Contact Us", "Facebook", "Twitter", "GitHub"],
   },
   {
     title: "Resources",
-    links: ["Blog", "Newsletter", "Free Products", "Affiliate Program"],
+    links: [
+      "Blog",
+      "Event Tech Solutions",
+      "Photo & Video Services",
+      "Marketing Strategies",
+    ],
   },
   {
     title: "Products",
-    links: ["Templates", "UI Kits", "Icons", "Mockups"],
+    links: [
+      "Event Planning",
+      "Audio-Visual Services",
+      "Catering & Food",
+      "Venue Selection",
+    ],
   },
 ];
 
@@ -27,11 +37,13 @@ const Footer = () => {
       <div className="mx-auto max-w-7xl px-8">
         <div className="mx-auto grid w-full grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-4">
           {SITEMAP.map(({ title, links }, key) => (
-            <div key={key} className="w-full ">
+            <div key={key} className="w-full">
               <Typography
                 variant="small"
                 color="blue-gray"
                 className="mb-4 font-semibold uppercase opacity-70 font-Poppins text-white"
+                data-aos="fade-up"
+                data-aos-duration="1500"
               >
                 {title}
               </Typography>
@@ -46,6 +58,8 @@ const Footer = () => {
                     <a
                       href="#"
                       className="inline-block py-1 pr-2 transition-transform hover:scale-105 hover:text-[#e83e8c] hover:underline font-Poppins font-medium text-white"
+                      data-aos="fade-up"
+                      data-aos-duration="1500"
                     >
                       {link}
                     </a>
@@ -61,13 +75,14 @@ const Footer = () => {
             className="mb-4 text-center font-normal text-white md:mb-0 font-Poppins"
           >
             &copy; {currentYear}{" "}
-            <a href="https://material-tailwind.com/">Material Tailwind</a>. All
-            Rights Reserved.
+            <a href="https://material-tailwind.com/">CONFER</a>. All Rights
+            Reserved.
           </Typography>
           <div className="flex gap-4 text-white sm:justify-center">
             <Typography
+              target="_blank"
               as="a"
-              href="#"
+              href="www.facebook.com"
               className="opacity-80 transition-opacity hover:opacity-100"
             >
               <svg
@@ -84,8 +99,9 @@ const Footer = () => {
               </svg>
             </Typography>
             <Typography
+              target="_blank"
               as="a"
-              href="#"
+              href="www.instagram.com"
               className="opacity-80 transition-opacity hover:opacity-100"
             >
               <svg
@@ -102,8 +118,9 @@ const Footer = () => {
               </svg>
             </Typography>
             <Typography
+              target="_blank"
               as="a"
-              href="#"
+              href="https://twitter.com/"
               className="opacity-80 transition-opacity hover:opacity-100"
             >
               <svg
@@ -116,8 +133,9 @@ const Footer = () => {
               </svg>
             </Typography>
             <Typography
+              target="_blank"
               as="a"
-              href="#"
+              href="https://github.com/"
               className="opacity-80 transition-opacity hover:opacity-100"
             >
               <svg
@@ -134,8 +152,9 @@ const Footer = () => {
               </svg>
             </Typography>
             <Typography
+              target="_blank"
               as="a"
-              href="#"
+              href="https://confer-42442.web.app"
               className="opacity-80 transition-opacity hover:opacity-100"
             >
               <svg

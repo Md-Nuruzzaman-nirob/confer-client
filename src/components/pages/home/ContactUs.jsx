@@ -1,35 +1,62 @@
-import { Link } from "react-router-dom";
-import toast from "react-hot-toast";
 import { Button } from "@material-tailwind/react";
-import NavBar from "../../common/header/NavBar";
-import Footer from "../../common/footer/Footer";
+import { Link } from "react-router-dom";
 
-const Contact = () => {
+const ContactUs = () => {
   return (
-    <>
-      <NavBar></NavBar>
-      <div
+    <div className="bg-indigo-900">
+      <h4
+        className="text-[#e83e8c] text-center pt-28 pb-2 uppercase"
         data-aos="fade-up"
         data-aos-duration="1500"
-        className="flex justify-center items-center my-24 md:my-36 lg:my-48 xl:my-56 max-w-7xl mx-5 xl:mx-auto"
       >
-        <div className="relative flex w-full flex-col md:flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-          <div className="relative m-0 md:w-2/5 shrink-0 overflow-hidden md:rounded-xl rounded-t-xl md:rounded-r-none bg-white bg-clip-border text-gray-700">
-            <img
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1471&amp;q=80"
-              alt="image"
-              className="h-full w-full object-cover"
-            />
+        have question?
+      </h4>
+      <h1
+        className="text-white text-3xl text-center font-semibold uppercase"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        contact us
+      </h1>
+      <div className="flex justify-center items-center pt-10 pb-24 md:pb-28 lg:pb-36 xl:pb-48 max-w-7xl mx-5 xl:mx-auto">
+        <div className="relative flex w-full flex-col-reverse md:flex-row gap-12 md:gap-0 text-white">
+          <div className="flex flex-col items-start justify-center  m-0 md:w-2/5 space-y-10 pl-7 md:pl-16">
+            <div data-aos="fade-up" data-aos-duration="1500">
+              <p className="opacity-80">Address:</p>
+              <h3 className="font-semibold">Dhaka-1204 Bangladesh</h3>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500">
+              <p className="opacity-80">Phone:</p>
+              <h3 className="font-semibold hover:underline">+8801919191991</h3>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500">
+              <p className="opacity-80">Email:</p>
+              <h3 className="font-semibold">nmd28573@gmail.com</h3>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500">
+              <p className="opacity-80">Website:</p>
+              <Link
+                target="_blank"
+                to={"https://confer-42442.web.app"}
+                className="font-semibold hover:underline"
+              >
+                https://confer-42442.web.app
+              </Link>
+            </div>
           </div>
-          <div className="flex-1 p-6">
-            <h2 className="text-2xl font-semibold mb-6">Contact Us</h2>
+          <div
+            className="flex-1 p-6 text-white"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <form className="w-full">
-              <div className="grid grid-cols-2 gap-4 mb-8">
+              <div
+                className="grid grid-cols-2 gap-4 mb-8"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
                 <div>
-                  <label
-                    htmlFor="first_name"
-                    className="block text-gray-600 mb-2 ml-4"
-                  >
+                  <label htmlFor="first_name" className="block mb-2 ml-4">
                     First Name
                   </label>
                   <input
@@ -42,10 +69,7 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label
-                    htmlFor="last_name"
-                    className="block text-gray-600 mb-2 ml-4"
-                  >
+                  <label htmlFor="last_name" className="block mb-2 ml-4">
                     Last Name
                   </label>
                   <input
@@ -58,12 +82,13 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4 mb-8">
+              <div
+                className="grid grid-cols-2 gap-4 mb-8"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
                 <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-gray-600 mb-2 ml-4"
-                  >
+                  <label htmlFor="email" className="block mb-2 ml-4">
                     Email Address
                   </label>
                   <input
@@ -76,10 +101,7 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label
-                    htmlFor="phone"
-                    className="block text-gray-600 mb-2 ml-4"
-                  >
+                  <label htmlFor="phone" className="block mb-2 ml-4">
                     Phone Number
                   </label>
                   <input
@@ -92,11 +114,8 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="message"
-                  className="block text-gray-600 mb-2 ml-4"
-                >
+              <div className="mb-4" data-aos="fade-up" data-aos-duration="1500">
+                <label htmlFor="message" className="block mb-2 ml-4">
                   Message
                 </label>
                 <textarea
@@ -115,8 +134,10 @@ const Contact = () => {
                 //     duration: 4000,
                 //   })
                 // }
-                className="flex select-none items-center gap-2 rounded-3xl py-3 px-6 text-center align-middle font-Poppins text-xs font-semibold uppercase bg-gradient-to-b from-[#e83e8c] to-[#6610f2]"
+                className="flex select-none items-center gap-2 rounded-3xl py-3 px-6 text-center align-middle font-Poppins text-xs uppercase font-semibold bg-[#e83e8c] text-white"
                 type="button"
+                data-aos="fade-up"
+                data-aos-duration="1500"
               >
                 send message
                 <svg
@@ -139,9 +160,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
-    </>
+    </div>
   );
 };
 
-export default Contact;
+export default ContactUs;

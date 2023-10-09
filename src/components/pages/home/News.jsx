@@ -5,15 +5,27 @@ import PropTypes from "prop-types";
 const News = ({ newsData }) => {
   return (
     <div className="max-w-7xl mx-5 xl:mx-auto ">
-      <h4 className="text-[#e83e8c] text-center pt-16 pb-2">OUR BLOG</h4>
-      <h1 className="text-black text-xl md:text-3xl text-center font-semibold">
+      <h4
+        className="text-[#e83e8c] text-center pt-16 pb-2"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        OUR BLOG
+      </h4>
+      <h1
+        className="text-black text-2xl md:text-3xl lg:text-4xl font-bold text-center"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         LATEST NEWS
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-7 mx-auto mt-20 mb-14">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-7 mx-auto mt-10 lg:mt-20 mb-14">
         {newsData?.slice(0, 3).map((news) => (
           <div
             key={news.id}
             className="relative flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+            data-aos="fade-up"
+            data-aos-duration="1500"
           >
             <div className="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
               <img
@@ -45,7 +57,12 @@ const News = ({ newsData }) => {
           </div>
         ))}
       </div>
-      <Link to={"/blogs"} className="flex justify-center items-center mb-20">
+      <Link
+        to={"/blogs"}
+        className="flex justify-center items-center mb-20"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <Button className="rounded-3xl bg-gradient-to-b from-[#e83e8c] to-[#6610f2] font-Poppins font-medium text-base">
           <span className="inline-flex items-center gap-2">
             more blogs

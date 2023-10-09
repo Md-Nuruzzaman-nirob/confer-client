@@ -4,7 +4,11 @@ const BlogCard = ({ newsCard }) => {
   const { Title, Description, Date, Time, Location } = newsCard || {};
 
   return (
-    <div className="relative flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mb-8">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      className="relative flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mb-8"
+    >
       <div className="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
         <img
           className="rounded-t-xl"

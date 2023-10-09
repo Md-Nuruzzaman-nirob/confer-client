@@ -8,11 +8,13 @@ import Blog from "../components/pages/blogs/Blog";
 import Contact from "../components/pages/contact/Contact";
 import DetailsServiceCard from "../components/pages/services/DetailsServiceCard";
 import Register from "../components/pages/auth/Register";
+import ErrorPage from "../components/pages/error/ErrorPage";
 
 const AppRouter = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
